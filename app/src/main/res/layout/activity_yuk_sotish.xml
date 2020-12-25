@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fon"
+
+    tools:context=".Activity.YukSotish">
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/fon_btn"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"/>
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:background="@drawable/round_button"
+        android:layout_margin="10dp"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        app:smsp_isSearchable="true"
+        app:smsp_hintColor="@color/white"
+        app:smsp_hintSize="15sp"
+        app:smsp_itemSize="15sp"
+        app:smsp_itemColor="@color/white"
+        app:smsp_itemListColor="#7C4DFF"
+        app:smsp_itemListHintBackgroundColor="@color/white"
+        app:smsp_itemListHintColor="#FFFFFF"
+        app:smsp_multilineError="false"
+        app:smsp_selectedItemListColor="#FF5252" />
+ <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:background="@drawable/round_button"
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:smsp_hint="Mahsulot tanlash"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        app:smsp_isSearchable="true"
+        app:smsp_hintColor="@color/white"
+        app:smsp_hintSize="15sp"
+        app:smsp_itemSize="15sp"
+        app:smsp_itemColor="@color/white"
+        app:smsp_itemListColor="#7C4DFF"
+        app:smsp_itemListHintBackgroundColor="@color/white"
+        app:smsp_itemListHintColor="#FFFFFF"
+        app:smsp_multilineError="false"
+        app:smsp_selectedItemListColor="#FF5252" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/miqdor"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            android:textSize="13dp"
+            android:textColorHint="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Miqdori (kg)"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/narx"
+            android:hint="Narxi (so'm)"
+            android:textSize="13dp"
+            android:textColor="#FFF"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+        <CheckedTextView
+            android:paddingRight="10dp"
+            android:id="@+id/simpleCheckedTextView"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_button"
+            android:checked="false"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingStart="15sp"
+            android:paddingLeft="5dp"
+            android:text="To'lash"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Qo'shish"
+            android:id="@+id/tasdiq"
+            android:drawableEnd="@drawable/ic_baseline_playlist_add"
+            android:paddingRight="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,InefficientWeight"
+            android:drawableRight="@drawable/ic_baseline_exposure_plus"
+             />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/tasdiqlash"
+             />
+
+        <Button
+            android:drawableEnd="@drawable/ic_baseline_playlist_add_check"
+            android:paddingRight="10dp"
+            android:id="@+id/tasdiqlash"
+            android:background="@drawable/round_button"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:text="Tasdiqlash"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/ic_baseline_verified_us" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

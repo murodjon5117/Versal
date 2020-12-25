@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fon"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:id="@+id/nomer_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/klient_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="Alijon"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/mahsulot_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="Olma"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/miqdor_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="12 kg"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/narx_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="10000 so'm"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/summa_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="120000 so'm"
+                    android:textColor="#71FF77" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:textColor="@color/white"
+        android:text="56328 236"
+        android:gravity="end"
+        android:paddingRight="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+        <!-- <LinearLayout
+             android:orientation="vertical"
+             android:background="@color/fon_btn"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+             <LinearLayout
+                 android:background="@color/fon_btn"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+
+                 android:orientation="horizontal">
+                 <TextView
+                     android:id="@+id/sotuv_id"
+                     android:layout_weight="1"
+                     android:paddingLeft="5dp"
+                     android:background="@color/fon_btn"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:gravity="center"
+                     android:textColor="@color/white"
+                     android:text="12 "
+                     android:layout_gravity="center"
+                     tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                 <TextView
+
+                     android:id="@+id/nomi"
+                     android:layout_weight="1"
+                     android:paddingLeft="5dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:background="@color/fon_btn"
+                     android:gravity="center_vertical"
+                     android:text="sdaucbha"
+                     android:textColor="@color/white"
+                     tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+                     android:paddingStart="5dp" />
+                 <TextView
+                     android:id="@+id/tovar_nomi"
+                     android:gravity="center"
+                     android:text="Yong'oq"
+                     android:layout_gravity="center"
+                     android:textColor="@color/white"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:background="@color/fon_btn"
+
+                     />
+                 <LinearLayout
+                     android:layout_weight="1"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:id="@+id/miqdor"
+                         android:gravity="center"
+                         android:text="10 kg"
+                         android:layout_gravity="center"
+                         android:textColor="@color/white"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:background="@color/fon_btn"
+
+                         />
+                     <TextView
+                         android:id="@+id/narx"
+                         android:gravity="center"
+                         android:text="100 so'm"
+                         android:layout_gravity="center"
+                         android:textColor="@color/white"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:background="@color/fon_btn"
+
+                         />
+
+
+                     <TextView
+                         android:id="@+id/summa"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:textColor="#08FF00"
+                         android:background="@color/fon_btn"
+                         android:layout_gravity="end"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:text="50000 so'm"
+
+                         tools:ignore="HardcodedText" />
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="12/12/2013"
+                 android:textColor="@color/white"
+                 android:gravity="end"
+                 android:background="@color/fon"
+                 tools:ignore="HardcodedText" />
+
+         </LinearLayout>
+ -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

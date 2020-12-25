@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fon"
+    tools:context=".Activity.Ombor">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/fon_btn"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.SearchView
+
+        style="@style/SearchViewStyle"
+        android:layout_margin="10dp"
+        android:id="@+id/editTextSearch2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:background="@drawable/round_button"
+
+        android:drawableLeft="@drawable/ic_baseline_search"
+
+        android:drawablePadding="7dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:iconifiedByDefault="false"
+        android:queryHint="Qidiruv"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:searchIcon="@drawable/ic_baseline_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catigory_search_rec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/fon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch2"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

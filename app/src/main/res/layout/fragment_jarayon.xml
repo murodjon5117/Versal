@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/fon"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.JarayonFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_sotish"
+            android:textSize="20dp"
+            android:text="Yuk sotish"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/round_button"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn_olish"
+            android:text="Yuk olish"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/round_button"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pulolish"
+                android:textSize="20dp"
+                android:text="Pul olish"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/round_button"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                tools:ignore="HardcodedText" />
+            <Button
+                android:id="@+id/pulberish"
+                android:textSize="20dp"
+                android:text="Pul berish"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/round_button"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+</LinearLayout>

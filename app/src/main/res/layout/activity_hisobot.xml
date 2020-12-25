@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fon"
+    tools:context=".Activity.Hisobot">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/fon_btn"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/olingan1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/round_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Kunlik olingan yuklar"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/sotilgan1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Kunlik sotilga yuklar"
+        android:textColor="#FFF"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/olingan1"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/pulber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Kunlik olingan pullar"
+        android:textColor="#FFF"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/sotilgan1"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/pulol"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/round_button"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Kunlik berilgan pullar"
+        android:textColor="#FFF"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/pulber"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

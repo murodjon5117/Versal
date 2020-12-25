@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quruqmeva">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.QarzdorlikActivity"></activity>
+        <activity android:name=".Activity.PulBerish" />
+        <activity android:name=".Activity.KlientQarz" />
+        <activity android:name=".Activity.YukchiHaqi" />
+        <activity android:name=".Activity.SotilganSana" />
+        <activity android:name=".Activity.Ombor" />
+        <activity android:name=".Activity.KunlikSotilganYukalar" />
+        <activity android:name=".Activity.YukSotish" />
+        <activity android:name=".Activity.YukOlish" />
+        <activity android:name=".Activity.KunlikOlinganYuklar" />
+        <activity android:name=".Activity.Hisobot" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#060818"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AsosiyFragment"
+    android:orientation="vertical">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:background="#f8f8f8"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#060818"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+
+        android:id="@+id/olingan"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:background="@drawable/round_button"
+        android:text="Kunlik olingan yuklar"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        tools:ignore="HardcodedText,SpUsage"
+        android:focusable="true" />
+    <Button
+        android:id="@+id/sotilgan"
+        android:background="@drawable/round_button"
+
+        android:textColor="#FFF"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20dp"
+
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Kunlik sotilga yuklar"
+        android:textStyle="bold"
+
+        android:gravity="center"
+        tools:ignore="HardcodedText"
+        android:focusable="true" />
+    <Button
+        android:id="@+id/ombor"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:background="@drawable/round_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ombordagi yuklar"
+        android:gravity="center"
+        tools:ignore="HardcodedText"
+        android:focusable="true" />
+    <Button
+        android:id="@+id/yukchihaqqi"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:background="@drawable/round_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Yukchilar haqlari "
+        android:gravity="center"
+        tools:ignore="HardcodedText"
+        android:focusable="true" />
+    <Button
+        android:id="@+id/klientqarzi"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:background="@drawable/round_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Klientlar qarzilari"
+        android:gravity="center"
+        tools:ignore="HardcodedText"
+        android:focusable="true" />
+</LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
